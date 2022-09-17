@@ -2,6 +2,9 @@
   "name": "@cst-tokens/js-grammar-estree",
   "version": "0.1.0",
   "author": "Conrad Buck<conartist6@gmail.com>",
+  "files": [
+    "lib"
+  ],
   "exports": {
     "./es3": "./lib/es3/index.js",
     "./es5": "./lib/es5/index.js",
