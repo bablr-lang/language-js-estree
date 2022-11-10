@@ -13,7 +13,7 @@ dependencies:
   debug: 4.3.4
 
 devDependencies:
-  cst-tokens: 0.8.1
+  cst-tokens: link:../cst-traverse
   eslint: 7.32.0
   meriyah: 4.3.0
   prettier: 2.7.1
@@ -78,20 +78,6 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
-    dev: true
-
-  /@iter-tools/imm-stack/1.1.0:
-    resolution: {integrity: sha512-5wCL8xt4sZ3v0buB3HrzqL2FTkaYB+ZVwkACo1G80zXWWG/8tSGgRiz7EQSkgDRrPQtpoGXRdOKW+GAVmG/Uyg==}
-    dev: true
-
-  /@iter-tools/regex/0.3.2:
-    resolution: {integrity: sha512-wTRHZUM8UoZGBthHdvzJFRfJN/OwKuFKc6TKFIHo7dy12rK77dDAjS+rM1CWpIyqr+ktoSEyUR013lIF9ztVjA==}
-    engines: {node: '>=12.0.0'}
-    dependencies:
-      '@iter-tools/imm-stack': 1.1.0
-      functional-red-black-tree: 1.0.1
-      iter-tools-es: 7.5.0
-      regexpp: 3.2.0
     dev: true
 
   /acorn-jsx/5.3.2_acorn@7.4.1:
@@ -226,17 +212,6 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-    dev: true
-
-  /cst-tokens/0.8.1:
-    resolution: {integrity: sha512-zzVwFsDsw/owCcCsHjdccIRpy7O/nCjCIe0IKDWpBqSi0cFdDzx0Q1aF/uvQkSO7xqfuS1lWgY+P0R+p1sVAWw==}
-    dependencies:
-      '@iter-tools/imm-stack': 1.1.0
-      '@iter-tools/regex': 0.3.2
-      debug: 4.3.4
-      escape-string-regexp: 4.0.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /debug/4.3.4:
@@ -522,10 +497,6 @@ packages:
 
   /isexe/2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
-    dev: true
-
-  /iter-tools-es/7.5.0:
-    resolution: {integrity: sha512-sUEvRvkEXmM8NUOPuHquHP8rPo1AKPdmzAGsl7/LzRAcaZ2c4P4w4FRohWoTvc1OCZukr9VtaqgS0BAAN1bKHA==}
     dev: true
 
   /js-tokens/4.0.0:
