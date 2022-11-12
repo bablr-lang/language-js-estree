@@ -1,19 +1,21 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cst-tokens/helpers': 0.8.1
-  cst-tokens: 0.8.1
+  '@cst-tokens/helpers': 0.9.1
+  cst-tokens: 0.9.2
   debug: ^4.3.4
+  escape-string-regexp: 4.0.0
   eslint: ^7.32.0
   meriyah: ^4.3.0
   prettier: ^2.7.1
 
 dependencies:
-  '@cst-tokens/helpers': 0.8.1
+  '@cst-tokens/helpers': 0.9.1
   debug: 4.3.4
+  escape-string-regexp: 4.0.0
 
 devDependencies:
-  cst-tokens: link:../cst-traverse
+  cst-tokens: 0.9.2
   eslint: 7.32.0
   meriyah: 4.3.0
   prettier: 2.7.1
@@ -40,8 +42,8 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@cst-tokens/helpers/0.8.1:
-    resolution: {integrity: sha512-TZG8rJRgYl8Qg+Iv9HFup2eQMgDuj6nL0b96tAgInTkH7LL2q5w1ZftZAxsnpoXO8M1uATnnyglJF266aegM1w==}
+  /@cst-tokens/helpers/0.9.1:
+    resolution: {integrity: sha512-sgWVBdEyGFAUqlZdxoU7RMFn60P/KjP1k/A/U24gs6qV4GQSRXyLoZdOVZaTyjJF/5d6lBZHZ3mel1XZg5I1pA==}
     dependencies:
       debug: 4.3.4
     transitivePeerDependencies:
@@ -78,6 +80,20 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iter-tools/imm-stack/1.1.0:
+    resolution: {integrity: sha512-5wCL8xt4sZ3v0buB3HrzqL2FTkaYB+ZVwkACo1G80zXWWG/8tSGgRiz7EQSkgDRrPQtpoGXRdOKW+GAVmG/Uyg==}
+    dev: true
+
+  /@iter-tools/regex/0.3.2:
+    resolution: {integrity: sha512-wTRHZUM8UoZGBthHdvzJFRfJN/OwKuFKc6TKFIHo7dy12rK77dDAjS+rM1CWpIyqr+ktoSEyUR013lIF9ztVjA==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@iter-tools/imm-stack': 1.1.0
+      functional-red-black-tree: 1.0.1
+      iter-tools-es: 7.5.0
+      regexpp: 3.2.0
     dev: true
 
   /acorn-jsx/5.3.2_acorn@7.4.1:
@@ -214,6 +230,17 @@ packages:
       which: 2.0.2
     dev: true
 
+  /cst-tokens/0.9.2:
+    resolution: {integrity: sha512-7szGvZ9sZJDTH6WjfO+uRzHC+ESKQkSfA5Dp9ONwksSv1PO8y4Ae0HBvWfFWYcBivyAmbEEXwsJevC8FmuxtzA==}
+    dependencies:
+      '@iter-tools/imm-stack': 1.1.0
+      '@iter-tools/regex': 0.3.2
+      debug: 4.3.4
+      escape-string-regexp: 4.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
     engines: {node: '>=6.0'}
@@ -255,7 +282,6 @@ packages:
   /escape-string-regexp/4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
-    dev: true
 
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
@@ -497,6 +523,10 @@ packages:
 
   /isexe/2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
+    dev: true
+
+  /iter-tools-es/7.5.0:
+    resolution: {integrity: sha512-sUEvRvkEXmM8NUOPuHquHP8rPo1AKPdmzAGsl7/LzRAcaZ2c4P4w4FRohWoTvc1OCZukr9VtaqgS0BAAN1bKHA==}
     dev: true
 
   /js-tokens/4.0.0:
