@@ -10,7 +10,7 @@ specifiers:
   prettier: ^2.7.1
 
 dependencies:
-  '@cst-tokens/helpers': 0.9.1
+  '@cst-tokens/helpers': link:../cst-tokens-helpers
   debug: 4.3.4
   escape-string-regexp: 4.0.0
 
@@ -41,14 +41,6 @@ packages:
       chalk: 2.4.2
       js-tokens: 4.0.0
     dev: true
-
-  /@cst-tokens/helpers/0.9.1:
-    resolution: {integrity: sha512-sgWVBdEyGFAUqlZdxoU7RMFn60P/KjP1k/A/U24gs6qV4GQSRXyLoZdOVZaTyjJF/5d6lBZHZ3mel1XZg5I1pA==}
-    dependencies:
-      debug: 4.3.4
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
 
   /@eslint/eslintrc/0.4.3:
     resolution: {integrity: sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw==}
